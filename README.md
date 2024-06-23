@@ -15,12 +15,15 @@ MacOS: Sonoma 14.5
 gcc -v : Apple clang version 15.0.0 (clang-1500.3.9.4)  
          Target: arm64-apple-darwin23.5.0  
          Thread model: posix  
+
+
 ### 使用技術
 <p style="display: inline">
 <img src="https://img.shields.io/badge/-C-00599C.svg?logo=C&style=flat&logoColor=white">
 <img src="https://img.shields.io/badge/-MacOS-000000.svg?logo=apple&style=flat&logoColor=white">
 <img src="https://img.shields.io/badge/-Make-555555.svg?logo=gnu-make&style=flat&logoColor=white">
 </p>
+
 
 ## コマンド一覧
 | コマンド       | 説明                                                                                       |
@@ -29,6 +32,7 @@ gcc -v : Apple clang version 15.0.0 (clang-1500.3.9.4)
 | `make all`     | すべてのソースファイル (`main.c`, `lexer.c`, `parser.c`) をコンパイルし、最終的な実行ファイル `main` を作成します。 |
 | `make clean`   | 生成されたオブジェクトファイル (`main.o`, `lexer.o`, `parser.o`) および実行ファイル `main` を削除します。    |
 | `make distclean` | `make clean`を実行し、さらにプロジェクトに特有のクリーンアップを行います。                               |
+
 
 ## 実行方法
 *※gccにてC言語のコンパイルを行える環境必須*  
