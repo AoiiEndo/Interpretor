@@ -166,10 +166,11 @@ Token* tokenize(const char* code) {
                 i++; //締めの"分足す
                 break;
             case '#':
-                tokens[tokens_index].type = TOKEN_COMMENT;
-                tokens[tokens_index].lexeme = "#";
-                tokens_index++;
                 i++;
+                while (code[i] != '\n') {
+                    i++;
+                }
+                i++; //改行コードごと#の後ろを飛ばす
                 break;
             case ';':
                 tokens[tokens_index].type = TOKEN_SEMICOLON;
