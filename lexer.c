@@ -170,7 +170,7 @@ Token* tokenize(const char* code) {
                 while (code[i] != '\n') {
                     i++;
                 }
-                i++; //改行コードごとその行を飛ばす
+                i++; //改行コードごと#の後ろを飛ばす
                 break;
             case ';':
                 tokens[tokens_index].type = TOKEN_SEMICOLON;

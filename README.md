@@ -5,7 +5,6 @@ gcc -v : Apple clang version 15.0.0 (clang-1500.3.9.4)
          Thread model: posix
 
 
-
 # 実行方法
 ※gccにてC言語のコンパイルを行える環境必須
 /プロジェクトディレクトリにて下記を実行
